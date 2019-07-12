@@ -2,7 +2,7 @@ const db = firebase.firestore();
 let currentUser;
 window.fbAsyncInit = function () {
     FB.init({
-        appId: '459229858213187',
+        appId: 'APP-ID',
         cookie: true,
         xfbml: true,
         version: 'v3.3'
