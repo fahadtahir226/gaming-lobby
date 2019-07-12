@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>Version 8.9 for db</p>
+  <p>Name: </p>
+  <input type="text" id="reg-name" />
+  <br />
+  <p>Email: </p>
+  <input type="text" id="reg-email" />
+  <br />
+  <p>Password: </p>
+  <input type="password" id="reg-password" />
+  <br />
+  <button onclick="Register()">Register</button>
+  
+  <br />
+  <br />
+  <p>Email: </p>
+  <input type="text" value="fahad@fahad.com" id="login-email" />
+  <br />
+  <p>Password: </p>
+  <input type="password" value="fahadd" id="login-pass" />
+  <br />
+  <button onclick="login(event)">Login</button>
+  
+  <br />
+  <br />  
+  <fb:login-button 
+    scope="public_profile,email"
+    onlogin="checkLoginState();">Login using facebook
+  </fb:login-button>
+  <div id="status"></div>
+
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js"></script>
+  <script src="./firebase-config.js"></script>
+  <script src="./Login/email-login.js"></script>
+  <script src="./Login/facebook-login.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
